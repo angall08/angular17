@@ -1,20 +1,13 @@
-
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'
-// import { NoopAnimationsModule  } from '@angular/platform-browser/animations'
-import { CommonModule } from '@angular/common'
-import { AppComponent } from '../app.component';
+import { FormsModule } from '@angular/forms';
+
+import { CommonModule } from '@angular/common';
 import { NgFor } from '@angular/common';
 import { NgIf } from '@angular/common';
-
-import { HeroesComponent } from '../heroes/heroes.component';
-import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
-
-
 @NgModule({
   declarations: [],
-  imports: [NgFor, NgIf,CommonModule,FormsModule, HeroesComponent,HeroDetailComponent],
+  imports: [NgFor, NgIf, CommonModule, FormsModule],
   providers: [],
-  exports: [NgFor, NgIf,CommonModule,FormsModule, HeroesComponent,HeroDetailComponent]
+  exports: [NgFor, NgIf, CommonModule, FormsModule],
 })
-export class SharedModule {} 
+export class SharedModule {}
